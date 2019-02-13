@@ -32,7 +32,11 @@ $(function(){
 
     var getAddress = function(cep){
         var endpoint = `https://viacep.com.br/ws/${cep}/json/`
-        console.log(endpoint);
+        $.ajax({
+            url: endpoint,
+            method: "GET",
+            dataType: "json"
+        }); // método diretamente linkado pro objeto do jquery, sem necessidade de estar acoplado a algum elemento da tela, porque não tem necessidade. no caso o objeto está como parâmetro, passando lá dentro
     }
 
     // eventos
