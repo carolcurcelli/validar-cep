@@ -32,6 +32,7 @@ $(function(){
 
     var getAddress = function(cep){
         var endpoint = `https://viacep.com.br/ws/${cep}/json/`
+        console.log(endpoint);
     }
 
     // eventos
