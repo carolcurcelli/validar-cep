@@ -2,6 +2,18 @@ body {
   padding: 4em;
 }
 
+
+.error-message {
+  background-color: #f2dede;
+  border-color: #ebcccc;
+  color: #a94442;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  margin-top: 1rem;
+}
+
 /* classe de erro para os campos */
 .pure-form input.error,
 .pure-form input.error:focus {

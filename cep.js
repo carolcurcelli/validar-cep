@@ -42,7 +42,7 @@ $(function(){
     }
 
     var genericError = function(){
-        $("<p>").text("Serviço indisponível!").appendTo("body");
+        $("<p>").text("Serviço indisponível!").addClass("error-message").appendTo("#msg");
     }
 
     var getAddressSuccess = function(){
