@@ -47,7 +47,8 @@ $(function(){
     }
 
     var getAddressSuccess = function(address){
-        console.log(address);
+        console.log(address.bairro);
+        $("#bairro").val(address.bairro); // val serve pra você capturar e setar o valor de um input
     }
 
     // eventos
