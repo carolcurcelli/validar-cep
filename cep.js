@@ -31,7 +31,7 @@ $(function(){
     }
 
     var getAddress = function(cep){
-        var endpoint = `https://viacep.com.br/ws/${cep}/jsom/`
+        var endpoint = `https://viacep.com.br/ws/${cep}/json/`
         $.ajax({
             url: endpoint,
             method: "GET",
@@ -46,8 +46,8 @@ $(function(){
         $("<p>").text("Serviço indisponível!").addClass("error-message").appendTo("#msg");
     }
 
-    var getAddressSuccess = function(){
-        debugger;
+    var getAddressSuccess = function(address){
+        console.log(address);
     }
 
     // eventos
@@ -55,5 +55,6 @@ $(function(){
     $("#cep")
     .on("input",onlyNumbers)
     .on("focusout",validateEntry);
+    // depois colocar mais um on pra chamar o validate entry quando clicar enter (key code do enter é 13)
     
 });
