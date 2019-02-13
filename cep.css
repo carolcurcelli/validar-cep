@@ -1,0 +1,10 @@
+body {
+  padding: 4em;
+}
+
+/* classe de erro para os campos */
+.pure-form input.error,
+.pure-form input.error:focus {
+  border-color: #e60000;
+  background: #ffe6e6;
+}
