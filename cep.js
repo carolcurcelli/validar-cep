@@ -42,6 +42,7 @@ $(function(){
     }
 
     var genericError = function(){
+        $("#msg").empty(); // tratando pra não ficar floodando mensagem de erro
         $("<p>").text("Serviço indisponível!").addClass("error-message").appendTo("#msg");
     }
 
