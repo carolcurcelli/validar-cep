@@ -47,8 +47,11 @@ $(function(){
     }
 
     var getAddressSuccess = function(address){
-        console.log(address.bairro);
+        console.log(address);
         $("#bairro").val(address.bairro); // val serve pra você capturar e setar o valor de um input
+        $("#logradouro").val(address.logradouro); 
+        $("#cidade").val(address.localidade); 
+        $("#estado").val(address.uf); 
     }
 
     // eventos
